@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Dark mode enable (Tailwind v4) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap");
+@import url("https://fonts.cdnfonts.com/css/solaimanlipi");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap");
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    /* font-family: "SolaimanLipi", "Tiro Bangla", Arial, sans-serif; */
+    font-family: "Hind Siliguri", sans-serif;
+    /* font-family: "Tiro Bangla", serif; */
+      scroll-behavior: smooth;
+  }
+  body {
+    max-width: 1535px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  small {
+    font-size: 0.75rem;
+    color: rgb(85, 85, 85);
+  }
+}
